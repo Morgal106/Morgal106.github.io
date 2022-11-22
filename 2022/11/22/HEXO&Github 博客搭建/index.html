@@ -117,7 +117,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                Hejmpaĝo
+                Startseite
               </a>
             </li>
           
@@ -129,7 +129,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                Arkivoj
+                Archiv
               </a>
             </li>
           
@@ -141,7 +141,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                Kategorio
+                Kategorien
               </a>
             </li>
           
@@ -153,7 +153,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                Etikedoj
+                Schlagwörter
               </a>
             </li>
           
@@ -165,7 +165,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                Pri
+                Über
               </a>
             </li>
           
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          941 vortoj
+          941 wörter
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          8 minutoj
+          8 minuten
         
       </span>
     
@@ -276,11 +276,11 @@
               <div class="markdown-body">
                 
                 <h2 id="1-安装所需环境Node-js-amp-Git-amp-HEXO"><a href="#1-安装所需环境Node-js-amp-Git-amp-HEXO" class="headerlink" title="1 安装所需环境Node.js&amp;Git&amp;HEXO"></a>1 安装所需环境Node.js&amp;Git&amp;HEXO</h2><p>访问<a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js (nodejs.org)</a>下载并安装 Node.js ，访问<a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a>下载并安装Git 。<br>打开终端，检查是否安装成功</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">node -v<br>npm -v<br>git -v<br></code></pre></td></tr></table></figure>
 <p>若返回版本号，则安装成功。<br>安装HEXO</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo -g<br></code></pre></td></tr></table></figure>
 <p>同样，使用</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo -v<br></code></pre></td></tr></table></figure>
 <p>检查是否安装成功，若返回版本号，则安装成功。</p>
 <h2 id="2-新建-GitHub-仓库"><a href="#2-新建-GitHub-仓库" class="headerlink" title="2 新建 GitHub 仓库"></a>2 新建 GitHub 仓库</h2><ol>
 <li><p>打开<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>，可使用<a target="_blank" rel="noopener" href="https://steampp.net/">Watt Toolkit(Steam++)</a>进行加速</p>
@@ -288,9 +288,9 @@
 <li><p>新建仓库，仓库名称为<code>XXX.github.io</code>其中<code>XXX</code>必须为 Github 用户名</p>
 <h2 id="3-生成-SSH-keys"><a href="#3-生成-SSH-keys" class="headerlink" title="3 生成 SSH keys"></a>3 生成 SSH keys</h2></li>
 <li><p>打开终端，检查 SSH 版本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh<br></code></pre></td></tr></table></figure></li>
 <li><p>生成 SSH key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;EMAIL&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;EMAIL&quot;</span><br></code></pre></td></tr></table></figure>
 <p>命令中 <code>EMAIL</code> 替换为 GitHub 的 EMAIL，输入命令后一直按回车直到结束</p>
 </li>
 <li><p>打开<code>C:\USERS\[用户名]\.ssh\id_rsa.pub</code>，复制其中内容</p>
@@ -298,20 +298,20 @@
 <li><p>打开 Github，点击右上角头像，点击 Settings，找到 <code>SSH and GPG keys</code>，点击 <code>New SSH key</code>，key type 选择 <code>Authentication Keys</code>，将第三步复制的内容粘贴到 key 文本框中，点击 Add SSH key 。</p>
 <h2 id="4-本地生成博客"><a href="#4-本地生成博客" class="headerlink" title="4 本地生成博客"></a>4 本地生成博客</h2></li>
 <li><p>hexo 初始化，在选定的博客文件夹中打开终端，执行如下命令，此命令将 GitHub 上的 hexo 库 clone 到本地，若出现 <code>access &quot;https://github.com/....&quot; fialed</code> 错误，百度 GitHub 镜像。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init<br></code></pre></td></tr></table></figure></li>
 <li><p>生成 hexo 初始博客</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g<br></code></pre></td></tr></table></figure></li>
 <li><p>部署本地服务器，本步骤可跳过。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s<br></code></pre></td></tr></table></figure>
 <h2 id="5-发布博客到网络"><a href="#5-发布博客到网络" class="headerlink" title="5 发布博客到网络"></a>5 发布博客到网络</h2></li>
 <li><p>安装 <code>hexo-deployer-git</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure></li>
 <li><p>修改博客根目录下的 <code>_config.yml</code> 文件，将文件末尾的 <code>deploy</code> 下的内容改为如下形式，库的 SSH 链接可从 GitHub 获取。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">	<span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">	<span class="attr">repository:</span> [ <span class="string">库的SSH链接</span> ]</span><br><span class="line">	<span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>	<span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>	<span class="hljs-attr">repository:</span> [ <span class="hljs-string">库的SSH链接</span> ]<br>	<span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure></li>
 <li><p>重新生成博客内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g<br></code></pre></td></tr></table></figure></li>
 <li><p>发布到网络</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo d<br></code></pre></td></tr></table></figure></li>
 <li><p>打开 <code>[用户名].github.io</code> 即可访问你的博客</p>
 </li>
 </ol>
@@ -349,20 +349,20 @@
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Aŭtoro</div>
+          <div>Beitragsautor</div>
           <div>ZWS</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Postigita</div>
+          <div>Veröffentlicht am</div>
           <div>2022年11月22日</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Lizenta</div>
+          <div>Urheberrechtshinweis</div>
           <div>
             
               
@@ -394,7 +394,7 @@
                     
                       <a href="/2022/11/21/hello-world/" title="Hello World">
                         <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">Sekva afiŝo</span>
+                        <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -413,7 +413,7 @@
       
   <aside class="sidebar" style="margin-left: -1rem">
     <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Enhavtabelo</p>
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Inhaltsverzeichnis</p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
@@ -468,7 +468,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Serĉi</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -476,7 +476,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">ŝlosivorto</label>
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -655,7 +655,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blogo funkcias plej bone kun JavaScript ebligita</div>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
   </noscript>
 </body>
 </html>
